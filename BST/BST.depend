@@ -27,35 +27,31 @@
 	"BST.h"
 	<string>
 
-1621369143 source:c:\users\dell i7\documents\πανεπιστιμιο\project\bst\main.cpp
+1620975797 source:c:\users\dell i7\documents\πανεπιστιμιο\github\binary-search-tree\bst\main.cpp
 	<iostream>
 	"BST.h"
 	"AVL_BST.h"
 	<cstdlib>
 	<string>
-	<fstream>
-	<algorithm>
-	<windows.h>
-	<bits/stdc++.h>
 
-1621245122 c:\users\dell i7\documents\πανεπιστιμιο\project\bst\include\bst.h
+1620983955 c:\users\dell i7\documents\πανεπιστιμιο\github\binary-search-tree\bst\include\bst.h
 	<string>
 
-1620983955 c:\users\dell i7\documents\πανεπιστιμιο\project\bst\include\avl_bst.h
+1620983955 c:\users\dell i7\documents\πανεπιστιμιο\github\binary-search-tree\bst\include\avl_bst.h
 	"BST.h"
 	<string>
 
-1621369556 source:c:\users\dell i7\documents\πανεπιστιμιο\project\bst\src\avl_bst.cpp
-	"AVL_BST.h"
-	"BST.h"
-	<cstdlib>
-	<iostream>
-	<string>
-
-1621357720 source:c:\users\dell i7\documents\πανεπιστιμιο\project\bst\src\bst.cpp
+1620977099 source:c:\users\dell i7\documents\πανεπιστιμιο\github\binary-search-tree\bst\src\bst.cpp
 	<cstdlib>
 	<iostream>
 	"BST.h"
 	<chrono>
+	<string>
+
+1622195994 source:c:\users\dell i7\documents\πανεπιστιμιο\github\binary-search-tree\bst\src\avl_bst.cpp
+	"AVL_BST.h"
+	"BST.h"
+	<cstdlib>
+	<iostream>
 	<string>
 

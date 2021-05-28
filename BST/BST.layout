@@ -4,12 +4,12 @@
 	<ActiveTarget name="Debug" />
 	<File name="src\BST.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="12005" topLine="439" />
+			<Cursor1 position="9223" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\AVL_BST.cpp" open="1" top="1" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\AVL_BST.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1577" topLine="239" />
+			<Cursor1 position="789" topLine="21" />
 		</Cursor>
 	</File>
 	<File name="include\AVL_BST.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -17,24 +17,17 @@
 			<Cursor1 position="1580" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="528" topLine="4" />
+		</Cursor>
+	</File>
 	<File name="include\BST.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="13" topLine="0" />
+			<Cursor1 position="2175" topLine="6" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="810" topLine="0" />
-		</Cursor>
-	</File>
-	<Target name="Debug" top="src\AVL_BST.cpp">
-		<File name="main.cpp" />
-		<File name="include\BST.h" />
-		<File name="src\BST.cpp" />
-		<File name="include\AVL_BST.h" />
-		<File name="src\AVL_BST.cpp" />
-	</Target>
-	<Target name="Release" top="src\AVL_BST.cpp">
+	<Target name="Debug" top="main.cpp">
 		<File name="main.cpp" />
 		<File name="include\BST.h" />
 		<File name="src\BST.cpp" />

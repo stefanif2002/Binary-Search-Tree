@@ -17,9 +17,6 @@ AVL_BST::~AVL_BST()
 
 int AVL_BST::maxHeight (node* ptr1, node* ptr2)
 {
-    /* We compare the heights of the 2 given nodes
-    and we return the greater height. */
-
     if (ptr1 != NULL && ptr2 != NULL)
         return (ptr1->height > ptr2->height)? ptr1->height : ptr2->height;
     else if (ptr1 == NULL && ptr2 != NULL)
@@ -32,29 +29,11 @@ int AVL_BST::maxHeight (node* ptr1, node* ptr2)
 
 BST::node* AVL_BST::rightRotate(node* y)
 {
-    /* We perform a right rotate
-    by setting at the position of the left child of the given node (node y -> left child)
-    the right child of it's current left child (node y -> left child = node y -> left child -> right child)
-    and then setting at the position of the right child of the current left child of the given node
-    the given node itself (node y -> left child -> right child = node y).
-    Finally we return the the left child of the given node (node y -> left child).
-
-    Visualization:
-
-                y                x
-               / \              / \
-              V   V            V   V
-              x   w     =>     l   y
-             / \                  / \
-            V   V                V   V
-            l   z                z   w
-    */
-
     node* x = y->left;
-    node* z = x->right;
+    node* T2 = x->right;
 
     x->right = y;
-    y->left = z;
+    y->left = T2;
 
     y->height = 1 + maxHeight(y->left,y->right);
     x->height = 1 + maxHeight(x->left,x->right);
@@ -64,29 +43,11 @@ BST::node* AVL_BST::rightRotate(node* y)
 
 BST::node* AVL_BST::leftRotate(node* x)
 {
-    /* We perform a left rotate
-    by setting at the position of the right child of the given node (node x -> right child)
-    the left child of it's current right child (node x -> right child = node x -> right child -> left child)
-    and then setting at the position of the left child of the current right child of the given node,
-    the given node itself (node x -> right child -> left child = node x).
-    Finally we return the the right child of the given node (node x -> right child).
-
-    Visualization:
-
-                x                y
-               / \              / \
-              V   V            V   V
-              w   y     =>     x   r
-                 / \          / \
-                V   V        V   V
-                z   r        w   z
-    */
-
     node* y = x->right;
-    node* z = y->left;
+    node* T2 = y->left;
 
     y->left = x;
-    x->right = z;
+    x->right = T2;
 
     x->height = 1 + maxHeight(x->left,x->right);
     y->height = 1 + maxHeight(y->left,y->right);
@@ -96,14 +57,11 @@ BST::node* AVL_BST::leftRotate(node* x)
 
 BST::node* AVL_BST::addLeafAVL (string a)
 {
-    node* ptr = addLeafPrivateAVL (a, root);
-    return ptr;
+    return addLeafPrivateAVL (a, root);
 }
 
 BST::node* AVL_BST::addLeafPrivateAVL (string s, node* ptr)
 {
-    /* Step 1: We execute the BST version of addLeafPrivate(). */
-
     if (ptr == NULL)
         return createLeaf(s);
 
@@ -125,19 +83,10 @@ BST::node* AVL_BST::addLeafPrivateAVL (string s, node* ptr)
         return ptr;
     }
 
-    /* We update height of this node. */
-
     ptr->height = 1 + maxHeight(ptr->left,ptr->right);
-
-    /* Step 2: We find the difference between the heights of the right and left node.
-    If the absolute value of the difference is greater than 1
-    then we rotate the nodes so that the tree becomes balanced. */
 
     int balance = isBalanced(ptr);
 
-    // If this node becomes unbalanced, then there are 4 cases.
-
-    // Left Left Case
     if (balance > 1 && s.compare(ptr->left->key) < 0)
         return rightRotate(ptr);
 
@@ -158,6 +107,8 @@ BST::node* AVL_BST::addLeafPrivateAVL (string s, node* ptr)
         ptr->right = rightRotate(ptr->right);
         return leftRotate(ptr);
     }
+
+    /* return the (unchanged) node pointer */
     return ptr;
 }
 
@@ -168,8 +119,6 @@ BST::node* AVL_BST::deleteNodeAVL (string a)
 
 BST::node* AVL_BST::deleteNodeAVL (string a, node* ptr)
 {
-    /* Step 1: We execute the BST version of deleteNode(). */
-
     if (root!=NULL) {
         if (root->key==a)
             removeNode (root);
@@ -205,9 +154,6 @@ BST::node* AVL_BST::deleteNodeAVL (string a, node* ptr)
     return ptr;
    }
 
-   /* We work similarly with the addLeafPrivateAVL()
-   so that we can re-balance the tree if it becomes unbalanced. */
-
     ptr->height = 1 + maxHeight(ptr->left,ptr->right);
 
     int balance = isBalanced(ptr);
@@ -240,8 +186,6 @@ BST::node* AVL_BST::deleteNodeAVL (string a, node* ptr)
 
 int AVL_BST::isBalanced (node* ptr)
 {
-    /* Returns the difference between the heights of the right and the left children of the node. */
-
     if (ptr->left != NULL && ptr->right != NULL)
         return ptr->left->height - ptr->right->height;
     else if (ptr->left == NULL && ptr->right != NULL)
@@ -255,8 +199,6 @@ int AVL_BST::isBalanced (node* ptr)
 
 void AVL_BST::print (int c, long long int d)
 {
-    /* We print the information about the found key. */
-
     if (c==-1) {
         cout << "The tree is empty." << endl;
         return;

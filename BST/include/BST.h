@@ -28,7 +28,7 @@ class BST
         void removeNode (node* father, node* ptr, bool a);  //Function to remove the given node
         void removeNode (node* ptr);                //Function to remove the given node (Only when removing the root of the tree)
         void removeSubTree (node* ptr);             //Function to delete a tree
-        virtual void print (int c, long long int d, string a);//Function to print the information of the found node (times that the key have been appeared and time that the execution has taken)
+        virtual void print (int c, long long int d);//Function to print the information of the found node (times that the key have been appeared and time that the execution has taken)
 
     private:
 
