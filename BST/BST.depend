@@ -1,0 +1,61 @@
+# depslib dependency file v1.0
+1620975797 source:c:\users\dell i7\documents\πανεπιστιμιο\coding\c++\project_data_structures_2021\bst\main.cpp
+	<iostream>
+	"BST.h"
+	"AVL_BST.h"
+	<cstdlib>
+	<string>
+
+1620983955 c:\users\dell i7\documents\πανεπιστιμιο\coding\c++\project_data_structures_2021\bst\include\bst.h
+	<string>
+
+1620976509 source:c:\users\dell i7\documents\πανεπιστιμιο\coding\c++\project_data_structures_2021\bst\src\bst.cpp
+	<cstdlib>
+	<iostream>
+	"BST.h"
+	<chrono>
+	<string>
+
+1620976825 source:c:\users\dell i7\documents\πανεπιστιμιο\coding\c++\project_data_structures_2021\bst\src\avl_bst.cpp
+	"AVL_BST.h"
+	"BST.h"
+	<cstdlib>
+	<iostream>
+	<string>
+
+1620983955 c:\users\dell i7\documents\πανεπιστιμιο\coding\c++\project_data_structures_2021\bst\include\avl_bst.h
+	"BST.h"
+	<string>
+
+1621369143 source:c:\users\dell i7\documents\πανεπιστιμιο\project\bst\main.cpp
+	<iostream>
+	"BST.h"
+	"AVL_BST.h"
+	<cstdlib>
+	<string>
+	<fstream>
+	<algorithm>
+	<windows.h>
+	<bits/stdc++.h>
+
+1621245122 c:\users\dell i7\documents\πανεπιστιμιο\project\bst\include\bst.h
+	<string>
+
+1620983955 c:\users\dell i7\documents\πανεπιστιμιο\project\bst\include\avl_bst.h
+	"BST.h"
+	<string>
+
+1621369556 source:c:\users\dell i7\documents\πανεπιστιμιο\project\bst\src\avl_bst.cpp
+	"AVL_BST.h"
+	"BST.h"
+	<cstdlib>
+	<iostream>
+	<string>
+
+1621357720 source:c:\users\dell i7\documents\πανεπιστιμιο\project\bst\src\bst.cpp
+	<cstdlib>
+	<iostream>
+	"BST.h"
+	<chrono>
+	<string>
+
